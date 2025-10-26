@@ -1,0 +1,7 @@
+@import 'bootstrap-icons/font/bootstrap-icons.css';
+
+body{
+    background-color: rgb(17, 30, 49);
+    max-width: 1400px;
+    margin: 0 auto;
+}
