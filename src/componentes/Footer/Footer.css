@@ -1,0 +1,46 @@
+footer{
+    background-color: rgb(8, 15, 45);
+
+}
+
+.footer{
+    max-width: 1200px;
+    margin: 0 auto;
+    color: white;
+    padding: 40px 0 0 0;
+    font-size: 18px;
+    display: flex;
+    justify-content: space-between;
+
+
+    
+}
+
+.footer__logo__img{
+    /* background-color: white; */
+    max-width: 250px;
+}
+
+
+.footer_redes{
+    display: flex;
+    padding: 0;
+    margin: 30px 0;
+    gap: 50px;
+}
+.footer_redes a{
+    color: white;
+}
+.footer__texto {
+    max-width: 400px;
+}
+
+.footer__contacto__div{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 50px;
+}
+i{
+    font-size: 30px;
+}

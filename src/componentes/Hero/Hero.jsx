@@ -1,11 +1,11 @@
-import React, { useState, useEffect } from 'react';
-import './Hero.css'; // Asegúrate de crear este archivo CSS
-import Hero from '../../assets/hero_1.png'
+import React, { useState, useEffect } from "react";
+import "./Hero.css"; // Asegúrate de crear este archivo CSS
+import Hero from "../../assets/hero_1.png";
 
 const images = [
   Hero,
-  '/images/hero-2.jpg',
-  '/images/hero-3.jpg',
+  "/images/hero-2.jpg",
+  "/images/hero-3.jpg",
   // Agrega más rutas de imágenes aquí
 ];
 
@@ -46,19 +46,35 @@ const HeroSection = () => {
   };
 
   return (
-    <section className="hero-section" style={{ backgroundImage: `url(${images[currentImageIndex]})` }}>
+    <section
+      className="hero-section"
+      style={{ backgroundImage: `url(${images[currentImageIndex]})` }}
+    >
       <div className="hero-overlay">
-        <div className="hero-content">
-          <h1 className={`hero-title ${animateText ? 'animate-fade-in' : ''}`}>
-            BILLETERA MUTUAL CAF
-          </h1>
-          <p className={`hero-description ${animateButton ? 'animate-slide-up' : ''}`}>
-            Te presentamos un nuevo servicio, más rápido y seguro, al alcance de tu mano. Nuestra billetera online!
-            ¡Resuelve todo desde tu teléfono, estés donde estés!
-          </p>
-          <button className={`hero-button ${animateButton ? 'animate-slide-up' : ''}`}>
-            CONOCE MÁS
-          </button>
+        <div className="hero-contenido">
+          <div className="hero-content">
+            <h1
+              className={`hero-title ${animateText ? "animate-fade-in" : ""}`}
+            >
+              BILLETERA MUTUAL CAF
+            </h1>
+            <p
+              className={`hero-description ${
+                animateButton ? "animate-slide-up" : ""
+              }`}
+            >
+              Te presentamos un nuevo servicio, más rápido y seguro, al alcance
+              de tu mano. Nuestra billetera online! ¡Resuelve todo desde tu
+              teléfono, estés donde estés!
+            </p>
+            <button
+              className={`hero-button ${
+                animateButton ? "animate-slide-up" : ""
+              }`}
+            >
+              CONOCE MÁS
+            </button>
+          </div>
         </div>
 
         <div className="hero-navigation">

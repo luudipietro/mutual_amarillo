@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import Logo from "../../assets/logo_mutual_sin_fondo.png";
 import "./Navbar.css";
+import Ul_redes from "../Ul_redes/Ul_redes";
 
 const NavbarLinks = [
   {
@@ -24,7 +25,6 @@ const NavbarLinks = [
     link: "#",
   },
 ];
-
 const NavbarRedes = [
   {
     id: 1,
@@ -42,6 +42,7 @@ const NavbarRedes = [
     icon: "bi bi-facebook",
   },
 ];
+
 
 export const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -82,15 +83,7 @@ export const Navbar = () => {
         </div>
 
         <div className="redes">
-          <ul className="redes__ul">
-            {NavbarRedes.map((link) => (
-              <li key={link.id}>
-                <a href={link.link}>
-                  <i className={`${link.icon}`}></i>
-                </a>
-              </li>
-            ))}
-          </ul>
+          <Ul_redes nombre_clase='redes__ul'/>
         </div>
 
         
@@ -105,15 +98,7 @@ export const Navbar = () => {
             ))}
           </ul>
 
-          <ul className="redes_menu_mobile">
-            {NavbarRedes.map((link) => (
-              <li key={link.id}>
-                <a href={link.link}>
-                  <i className={`${link.icon}`}></i>
-                </a>
-              </li>
-            ))}
-          </ul>
+          <Ul_redes nombre_clase='redes_menu_mobile'/>
         </div>
     </nav>
   );
