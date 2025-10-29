@@ -10,7 +10,7 @@
   justify-content: center;
   color: white;
   padding: 0;
-  transition: background-image 0.8s ease-in-out; /* Transición suave entre imágenes */
+
 }
 
 .hero-overlay {
@@ -55,7 +55,7 @@
 }
 
 .hero-button {
-  background-color: #e53935; /* Color rojo del botón */
+  background-color: rgb(8, 15, 45); /* Color rojo del botón */
   color: white;
   border: none;
   padding: 15px 30px;
@@ -69,7 +69,8 @@
 }
 
 .hero-button:hover {
-  background-color: #c62828;
+  background-color: #fbdd1b;
+  color: rgb(8, 15, 45);
 }
 
 /* Animaciones */
@@ -80,6 +81,7 @@
 .animate-slide-up {
   animation: slideUp 0.8s ease-out forwards;
 }
+
 
 @keyframes fadeIn {
   from {

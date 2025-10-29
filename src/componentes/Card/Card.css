@@ -1,5 +1,6 @@
 .card {
-  min-width: calc(33.3333% - 20px); /* Ejemplo: 3 tarjetas visibles con espaciado */
+    flex: 0 0 calc(100%/3);
+  /* min-width: calc(33.3333% - 20px);  */
   margin-right: 20px; /* Espaciado entre tarjetas */
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -29,10 +30,11 @@
 }
 
 .card-content h3 {
-  font-size: 1.2em;
+  font-size: 22px;
   font-weight: bold;
   margin-bottom: 10px;
   color: #333;
+  text-align: center;
 }
 
 .card-content p {
@@ -64,4 +66,16 @@
 .card-health {
   background-color: #ffffff; /* Blanco */
   border: 1px solid #eee;
+}
+
+@media(max-width: 900px){
+.card{
+    flex: 0 0 calc(100%/2);
+}
+}
+
+@media(max-width: 600px){
+.card{
+    flex: 0 0 100%;
+}
 }

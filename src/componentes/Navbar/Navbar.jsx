@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import {NavLink } from 'react-router-dom';
 import Logo from "../../assets/logo_mutual_sin_fondo.png";
 import "./Navbar.css";
 import Ul_redes from "../Ul_redes/Ul_redes";
@@ -12,7 +13,7 @@ const NavbarLinks = [
   {
     id: 2,
     name: "Nuestra Mutual",
-    link: "#",
+    link: "/nuestra-mutual",
   },
   {
     id: 3,
@@ -51,15 +52,18 @@ export const Navbar = () => {
     setIsOpen(!isOpen);
   };
 
+
   return (
     <nav>
       <div className="navbar">
         <div>
+          <a href="/">
           <img
             className="logo"
             src={Logo}
             alt="Logo de la mutual sueño amarillo"
           />
+          </a>
         </div>
 
         {/* Boton hamburguesa */}
@@ -76,7 +80,9 @@ export const Navbar = () => {
           <ul className="links__ul">
             {NavbarLinks.map((link) => (
               <li key={link.id}>
+                <NavLink to={link.link}>
                 <a href={link.link}>{link.name}</a>
+                </NavLink>
               </li>
             ))}
           </ul>

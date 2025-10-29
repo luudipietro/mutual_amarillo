@@ -22,9 +22,7 @@ const Footer = () => {
               compartido, donde el bienestar colectivo es el verdadero objetivo.
             </p>
           </div>
-          <div className="footer__contacto__redes">
-            <Ul_redes nombre_clase="footer_redes" />
-          </div>
+          
         </div>
 
         <div className="footer__contacto">
@@ -39,7 +37,7 @@ const Footer = () => {
             <i className="bi bi-geo-alt"></i>
             <div>
               <p>Nuestra ubicación</p>
-              <p>Belgrano 4397 Planta Alta Unidad 5</p>
+              <a href="https://maps.app.goo.gl/BnNL3Uqj6ATi4sqv6" target="_blank" rel="noopener noreferrer"> Belgrano 4397 Planta Alta Unidad 5</a>
             </div>
           </div>
           <div className="footer__contacto__div">
@@ -50,7 +48,11 @@ const Footer = () => {
             </div>
           </div>
         </div>
+        
       </div>
+      <div className="footer__redes">
+            <Ul_redes nombre_clase="footer_redes" />
+          </div>
     </footer>
   );
 };

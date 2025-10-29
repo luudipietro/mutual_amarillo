@@ -1,13 +1,26 @@
 import React, { useState, useEffect } from "react";
 import "./Hero.css"; // Asegúrate de crear este archivo CSS
-import Hero from "../../assets/hero_1.png";
+import Hero1 from "../../assets/hero_1.png";
+import Hero2 from "../../assets/hero_2.png";
 
-const images = [
-  Hero,
-  "/images/hero-2.jpg",
-  "/images/hero-3.jpg",
-  // Agrega más rutas de imágenes aquí
-];
+
+const contenido = [
+  {
+    id: 1,
+    background_image: Hero1,
+    tittle: 'MUTUAL SUEÑO AMARILLO',
+    description: 'Un espacio de encuentro, apoyo y crecimiento compartido. Nacida desde una historia de trabajo, valores y comunidad, la Mutual Sueño Amarillo abre sus puertas a todos los que creen que los sueños pueden cumplirse juntos',
+    text_button: 'FORMA PARTE'
+
+  },
+  {
+    id: 2,
+    background_image: Hero2,
+    tittle: 'TURSIMO',
+    description: 'Viaja con la mejor financiación y los precios más bajos. No te quedes con las ganas y conocé los destinos increíbles que tenemos para vos',
+    text_button: 'QUIERO VIAJAR'
+  }
+]
 
 const HeroSection = () => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
@@ -35,20 +48,20 @@ const HeroSection = () => {
 
   const goToNextImage = () => {
     setCurrentImageIndex((prevIndex) =>
-      prevIndex === images.length - 1 ? 0 : prevIndex + 1
+      prevIndex === contenido.length - 1 ? 0 : prevIndex + 1
     );
   };
 
   const goToPrevImage = () => {
     setCurrentImageIndex((prevIndex) =>
-      prevIndex === 0 ? images.length - 1 : prevIndex - 1
+      prevIndex === 0 ? contenido.length - 1 : prevIndex - 1
     );
   };
 
   return (
     <section
       className="hero-section"
-      style={{ backgroundImage: `url(${images[currentImageIndex]})` }}
+      style={{ backgroundImage: `url(${contenido[currentImageIndex].background_image})` }}
     >
       <div className="hero-overlay">
         <div className="hero-contenido">
@@ -56,23 +69,21 @@ const HeroSection = () => {
             <h1
               className={`hero-title ${animateText ? "animate-fade-in" : ""}`}
             >
-              BILLETERA MUTUAL CAF
+              {contenido[currentImageIndex].tittle}
             </h1>
             <p
               className={`hero-description ${
                 animateButton ? "animate-slide-up" : ""
               }`}
             >
-              Te presentamos un nuevo servicio, más rápido y seguro, al alcance
-              de tu mano. Nuestra billetera online! ¡Resuelve todo desde tu
-              teléfono, estés donde estés!
+              {contenido[currentImageIndex].description}
             </p>
             <button
               className={`hero-button ${
                 animateButton ? "animate-slide-up" : ""
               }`}
             >
-              CONOCE MÁS
+              {contenido[currentImageIndex].text_button}
             </button>
           </div>
         </div>

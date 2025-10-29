@@ -2,7 +2,7 @@ import Navbar from "./componentes/Navbar/Navbar";
 import Hero from "./componentes/Hero/Hero";
 import Footer from "./componentes/Footer/Footer";
 import Carousel from "./componentes/Carousel/Carousel";
-
+import Tittle from "./componentes/Tittle/Tittle";
 function App() {
 
 
@@ -10,6 +10,7 @@ function App() {
     <>
       <Navbar/>
       <Hero/>
+      <Tittle/>
       <Carousel/>
       <Footer/>
     </>

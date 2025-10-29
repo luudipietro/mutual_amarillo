@@ -26,7 +26,7 @@ ul{
     width: auto;
 }
 .links{
-    margin: auto;
+    margin:0 auto;
     
 }
 
@@ -37,6 +37,10 @@ ul{
     gap: 40px;
     
 
+}
+
+.links__ul a:hover, .redes__ul a:hover{
+   color: #d4ba15;
 }
 
 .redes__ul{
@@ -69,7 +73,6 @@ a{
     display: block;
     width: 100%;
     background-color: whitesmoke;
-    transition: display 0.4s ease-in-out;
 }
 .links_menu_mobile{
     display: flex;
@@ -89,8 +92,7 @@ a{
     padding: 4px 0;
 }
 .menu_mobile_escondido{
-    max-height: 0px;
-    transition: max-height 0.4s ease-out;
+    display: none;
 }
 
 @media (min-width: 768px){
@@ -103,5 +105,6 @@ a{
     .menu_mobile{
         display: none;
     }
+   
 }
 
