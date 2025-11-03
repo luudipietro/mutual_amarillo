@@ -5,7 +5,7 @@ padding-bottom: 20px;
 
 .carousel-container {
   width: 100%;
-  max-width: 1200px; /* Ajusta según tus necesidades */
+  max-width: 1600px; /* Ajusta según tus necesidades */
   margin: 20px auto;
   overflow: hidden; /* Importante para ocultar las tarjetas que están fuera de vista */
   position: relative;

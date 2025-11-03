@@ -1,8 +1,15 @@
 .Name{
-    max-width: 1200px;
+    max-width: 1600px;
     margin: 0 auto
 }
 .Name h1{
     font-size: 52px;
     text-align: center;
+    font-family: "Newsreader", serif;
+}
+
+@media(max-width: 900px){
+    .Name h1{
+    font-size: 40px;
+}
 }

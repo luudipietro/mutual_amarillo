@@ -27,7 +27,7 @@
 }
 .hero-contenido{
   width: 100%;
-  max-width: 1200px;
+  max-width: 1600px;
   margin: 0 auto;
   
 }
@@ -191,4 +191,10 @@
 }
 .next-arrow:hover .arrow-icon {
   margin-left: 10px;
+}
+
+@media(max-width:1600px){
+  .hero-content{
+  padding-left: 40px;
+  }
 }

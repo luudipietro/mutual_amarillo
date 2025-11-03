@@ -1,11 +1,14 @@
 import React from "react";
+import "./NuestraMutual.css"
 
 import Organigram from "../../componentes/Organigram/Organigram";
 
 const NuestraMutual = () => {
   return (
     <>
+      <div className="container">
       <section className="nosotros">
+        <div className="nosotros__container">
         <h1> Sobre nosotros</h1>
         <div>
             <div>
@@ -33,14 +36,17 @@ const NuestraMutual = () => {
         </p>
         </div>
         </div>
+        </div>
       </section>
       
 
       <section className="organigrama">
+        <div className="nosotros__container">
         <h2>Nuestra Estructura</h2>
         <Organigram/>
+        </div>
       </section>
-     
+     </div>
     </>
   );
 };
