@@ -5,9 +5,7 @@ const Organigram = () => {
   return (
     <div className="organigram-container">
 
-        <div className="organigram-section level-1">
-        <MemberCard position="Gerente" name="Ceccotti Nicolás Alfredo" />
-      </div>
+        
 
       {/* Nivel 1: Presidente */}
       {/* Título para Junta Fiscalizadora */}
@@ -51,9 +49,16 @@ const Organigram = () => {
         <MemberCard position="Titular 2" name="Orso Alberto" />
         <MemberCard position="Titular 3" name="Jaldin Alejandro" />
         {/* Espaciador/Divisor */}
-        <div className="organigram-spacer"></div>
+        {/* <div className="organigram-spacer"></div>
 
-        <MemberCard position="Suplente 1" name="Solbes Ricardo" />
+        <MemberCard position="Suplente 1" name="Solbes Ricardo" /> */}
+      </div>
+      {/* Espaciador/Divisor */}
+      <div className="organigram-spacer"></div>
+      {/* Título para Puestos de trabajo */}
+      <h3 className="organigram-junta-title">Empleados</h3>
+      <div className="organigram-section level-1">
+        <MemberCard position="Gerente" name="Ceccotti Nicolás Alfredo" />
       </div>
     </div>
   );

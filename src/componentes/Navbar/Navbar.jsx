@@ -17,13 +17,13 @@ const NavbarLinks = [
   },
   {
     id: 3,
-    name: "Servicios",
-    link: "3",
+    name: "Turismo",
+    link: "/turismo",
   },
   {
     id: 4,
     name: "Contacto",
-    link: "#",
+    link: "/contacto",
   },
 ];
 const NavbarRedes = [
@@ -81,7 +81,7 @@ export const Navbar = () => {
             {NavbarLinks.map((link) => (
               <li key={link.id}>
                 <NavLink to={link.link}>
-                <a href={link.link}>{link.name}</a>
+                {link.name}
                 </NavLink>
               </li>
             ))}

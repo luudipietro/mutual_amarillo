@@ -3,7 +3,7 @@
   background-color: #f0f0f0; /* Fondo gris claro */
   border: 1px solid #ddd;   /* Borde suave */
   border-radius: 4px;       /* Esquinas redondeadas */
-  padding: 10px 15px;       /* Espaciado interno */
+         /* Espaciado interno */
   text-align: center;       /* Texto centrado */
   margin: 10px;             /* Espacio entre las tarjetas */
   min-width: 180px;         /* Ancho mínimo para las tarjetas */
@@ -17,7 +17,8 @@
 
 .member-card-position {
   font-weight: bold;
-  margin-bottom: 5px; /* Espacio entre posición y nombre */
+  margin-bottom: 0; /* Espacio entre posición y nombre */
+  margin-top: 5px;
   color: #333;
   font-size: 0.9em;
 }
@@ -25,4 +26,5 @@
 .member-card-name {
   color: #555;
   font-size: 1em;
+  margin: 5px;
 }
