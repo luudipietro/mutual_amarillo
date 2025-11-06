@@ -14,23 +14,23 @@ import Turismo from './Pages/Turismo/Turismo.jsx';
 
 const router = createBrowserRouter([
   {
-  path: '/mutual_amarillo',
+  path: '/',
   element: <Layout/>,
   children:[
     {
-      path: '/mutual_amarillo',
+      path: '/',
       element: <MainPage/>
     },
     {
-      path: '/mutual_amarillo/nuestra-mutual',
+      path: 'nuestra-mutual',
       element: <NuestraMutual/>
     },
     {
-      path: '/mutual_amarillo/contacto',
+      path: 'contacto',
       element: <Contacto/>
     },
     {
-      path: '/mutual_amarillo/turismo',
+      path: 'turismo',
       element: <Turismo/>
     }
   ]
